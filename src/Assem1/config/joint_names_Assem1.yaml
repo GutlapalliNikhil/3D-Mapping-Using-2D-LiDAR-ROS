@@ -1,0 +1,1 @@
+controller_joint_names: ['', 'f_r_j', 'f_l_j', 'b_r_j', 'b_l_j', 'lidar_stand_j', ]

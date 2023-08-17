@@ -1,0 +1,22 @@
+<launch>
+  <arg name="model" default="$(find Assem1)/urdf/Assem1.urdf.xacro"/>
+  
+  <include file="$(find Assem1)/launch/gazebo.launch">
+    <arg name="model" value="$(arg model)" />
+  </include>
+
+  <rosparam command="load"
+            file="$(find Assem1)/config/joints.yaml"
+            ns="r2d2_joint_state_controller" />
+  <rosparam command="load"
+            file="$(find Assem1)/config/head.yaml"
+            ns="r2d2_head_controller" />
+
+  <node name="r2d2_controller_spawner" pkg="controller_manager" type="spawner"
+    args="r2d2_joint_state_controller
+          r2d2_head_controller
+          --shutdown-timeout 3"/>
+          
+  <node type="rviz" name="rviz" pkg="rviz" args="-d $(find Assem1)/3d_rviz.rviz" />
+  
+</launch>
