@@ -15,7 +15,7 @@ Welcome to the repository for our project that explores the world of 3D mapping 
 
 ## Overview
 
-In this project, we designed a robot with a 2D Lidar using SolidWorks and created a URDF model to simulate it in Gazebo. The robot has a 2D Lidar that scans the environment, and we developed a Lidar plugin to collect scan data. We then processed this data to generate 3D maps using the octomap library.
+In this creative project, a combination of a 2D Lidar, ROS, and Gazebo brought forth a new path in the world of 3D mapping. The project commenced with the design of an innovative robot using a tool called SolidWorks. This robot possessed a unique laser scanner capable of observing from 0 to +60 degrees. Employing a specialized tool, laser data was collected and translated into point-like images. Subsequently, through the integration of ROS and a dedicated library called octomap, these images were transformed into highly detailed 3D maps. This endeavor exemplifies the enhancement of a robot's understanding of its surroundings and its ability to autonomously navigate.
 
 ## Installation
 
